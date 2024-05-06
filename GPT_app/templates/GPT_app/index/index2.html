@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Starter Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+
+
+  <main>
+    <a href="{% url 'index' %}">
+      <h1>Your 24/7 Marketing Copilot</h1>
+    </a>
+    <p class="fs-5 col-md-8">Meet your AI marketing assistant that helps small businesses solve marketing puzzles without breaking the bank.</p>
+
+    <div class="mb-5">
+      <a href="../examples/" class="btn btn-primary btn-lg px-4"></a>
+    </div>
+
+    <hr class="col-3 col-md-2 mb-5">
+    {{ obj }}
+
+<form action="{% url 'p3' %}">
+  <!--      {% csrf_token %}-->
+    <div class="form-floating">
+  <textarea class="form-control" name="text" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+</div>
+
+
+      <button type="submit" class="btn btn-primary">Next</button>
+    </form>
+
+<!--    <label for="exampleDataList" class="form-label">Datalist example</label>-->
+<!--<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">-->
+<!--<datalist id="datalistOptions">-->
+<!--  <option value="San Francisco">-->
+<!--  <option value="New York">-->
+<!--  <option value="Seattle">-->
+<!--  <option value="Los Angeles">-->
+<!--  <option value="Chicago">-->
+<!--</datalist>-->
+
+
+  </main>
+<!--  <footer class="pt-5 my-5 text-muted border-top">-->
+<!--    Created by the Bootstrap team &middot; &copy; 2021-->
+<!--  </footer>-->
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>
